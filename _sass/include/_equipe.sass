@@ -1,0 +1,52 @@
+.equipe
+    
+    .container
+
+
+        .content_equipe
+            +make-row()
+
+            .content_equipe--equipe //col-8 offset-2 col-md-6
+                margin-bottom: 3em
+                +make-col(8)
+                +make-col-offset(2)
+                +media-breakpoint-up(md)
+                    +make-col(6)
+                +flexbox
+                +flex-direction(column)
+                +justify-content(center)
+                +align-items(center)
+                +media-breakpoint-up(md)
+                    margin-left: 0% 
+                    +flex-direction(row)
+
+                .avatar
+                    width: 130px
+                    height: 130px
+                    background-color: #f1f1f1
+                    overflow: hidden
+                    +border-radius(50%)
+
+                    img
+                        min-width: 100%
+
+                .avatar_title
+                    margin: 1em 0em 1.8em
+                    +media-breakpoint-up(md)
+                        margin-left: 2em
+
+                    h2 
+                        font-size: 1.3em
+                        color: $color3
+                        text-align: center
+                        margin-bottom: 0em
+                        +media-breakpoint-up(md)
+                            text-align: left
+
+                    p 
+                        font-size: 1em
+                        color: $color4
+                        text-align: center
+                        margin-bottom: 0em
+                        +media-breakpoint-up(md)
+                            text-align: left

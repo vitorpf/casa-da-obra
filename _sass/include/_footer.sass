@@ -1,0 +1,44 @@
+.rodape 
+    width: 100%
+    padding: 1em 0
+    background-color: #324D5C
+    
+    .content-social
+        width: 35%
+        margin: 0 auto .5em
+        +flexbox
+        +justify-content(space-between)
+        +media-breakpoint-up(md)
+            width: 20%
+        +media-breakpoint-up(lg)
+            width: 15%
+
+        a 
+            color: #ccc
+            font-size: 1.3em
+            +media-breakpoint-up(lg)
+                font-size: 1.8em
+            &:hover
+                color: $color1
+
+    .content-footer
+
+        h4 
+            color: #ccc
+            font-size: 1em
+            text-align: center
+            font-weight: 400
+            margin-bottom: 0em
+
+            span 
+                display: block
+
+                a                     
+                    color: #999
+                    font-size: .8em
+                    @media (min-width: 375px)
+                        font-size: 1em
+                        
+                    &:hover
+                        color: $color1
+                        text-decoration: none

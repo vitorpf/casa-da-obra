@@ -1,0 +1,74 @@
+.galeria    
+    .container      
+
+        .content  
+            
+            .content_gallery 
+                +make-row()
+                +flex-wrap(nowrap)
+                list-style: none
+                padding-left: 0px                
+                overflow-x: scroll
+                +media-breakpoint-up(md)
+                    +flex-wrap(wrap)
+                    overflow-x: initial
+
+                .content_gallery--gallery
+                    +make-col(10)
+                    padding-left: 15px                 
+                    +media-breakpoint-up(sm)
+                        +make-col(7)
+                    +media-breakpoint-up(md)
+                        +make-col(4)
+                        padding-bottom: 15px       
+                    +media-breakpoint-up(lg)                        
+                        +make-col(3) 
+                    +media-breakpoint-up(xl)                        
+                        +make-col(2)      
+
+                    &:hover
+                        opacity: 0.5
+
+                    a 
+                        display: block
+                        width: 100%
+                        height: 100%
+
+                        img                             
+                            object-fit: cover
+.ekko-lightbox
+
+    .modal-content
+        background-color: transparent
+
+        .modal-header
+            border-bottom: none
+            position: relative
+            padding: 0rem
+
+            .modal-title 
+                display: none
+
+            .close
+                z-index: 10
+                position: absolute
+                top: 15px
+                right: 15px
+                opacity: 1
+                text-shadow: none
+
+        .modal-body
+            padding: 0rem
+
+            img 
+                border-radius: 2px
+
+            a 
+                color: $colorB
+                opacity: 1
+                
+        .modal-footer
+            
+.modal-backdrop.show
+    opacity: 0.8
+

@@ -1,0 +1,74 @@
+.servico
+    .container  
+
+        .content-title        
+            margin-bottom: 2em
+            
+        .content_servico
+            +make-row()
+
+            .content_servico--servico
+                +make-col(6)
+                cursor: pointer
+                &:hover .icon .icon-title
+                    color: $color1
+
+                .icon                    
+                    margin: 0em auto 1.5em
+
+                    .icon-content
+                        padding: 1em 0em
+                        
+                        img      
+                            display: block
+                            margin: 0em auto                       
+                            max-width: 60px
+                            max-height: 60px
+                            min-height: 60px                            
+
+                    .icon-title
+                        color: $colorB
+                        padding: 0em 1em
+                        font-size: 1.2em
+                        font-weight: 400
+                        text-align: center                        
+                
+                .modal                    
+                    
+                    .modal-dialog
+                        width: 98%
+                        height: 98%
+                        min-height: 98%
+                        margin: 1%
+                        @media (min-width: 960px)
+                            height: auto
+                            min-height: auto
+                            margin: 10rem auto
+
+                        .modal-content
+                            min-height: 100%
+                            min-width: 98vw
+                            background-color: transparent
+                            @media (min-width: 960px)
+                                min-height: 100%
+                                min-width: 100%
+                                margin: 0%
+
+                            .modal-header
+                                background-color: $color1
+                                color: $colorW
+
+                                button
+                                    color: $colorW
+
+                            .modal-body
+                                background-color: $colorW
+                                ul
+                                    
+                                    li
+                                        svg 
+                                            margin-right: .5em
+                                            color: $color1
+
+
+        

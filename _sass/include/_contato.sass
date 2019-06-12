@@ -1,0 +1,80 @@
+.contato    
+    .container
+        
+        .content
+            +make-row()
+
+            .content_contato    //col-12 col-md-6
+                padding-right: 15px
+                padding-left: 15px      
+                +make-col(12)        
+                +media-breakpoint-up(md)
+                    +make-col(6)
+                    
+
+                .content-title
+                    margin-bottom: 2em
+                    padding-left: 0px
+                    +media-breakpoint-up(md)
+                        padding-left: 15px
+                        
+                .form                    
+                    +media-breakpoint-up(xl)
+                        padding: 1em 0em
+
+                    .form-group
+                        label
+                            font-size: 0px
+                            display: none
+
+                        .form-control
+                    
+                    .btn-primary
+                        border-color: rgba(255, 81, 0, 0.8)
+                        font-size: 1.1em
+                        margin-top: 2em
+
+                        &:hover
+                            background-color:  #324D5C
+                            border-color: #324D5C
+
+                        +media-breakpoint-up(md)
+                            margin-top: 3.5em
+
+                        +media-breakpoint-up(xl)
+                            margin-top: 2em
+
+                
+            .content_localizacao //col-12 col-md-6
+                padding-top: 95px
+                +make-col(12)        
+                +media-breakpoint-up(md)
+                    +make-col(6)
+                    padding: 0px 15px 0
+
+                .content-title                 
+
+                .content-map
+                    height: 250px
+                    +media-breakpoint-up(xl)
+                        padding: 1em 0em
+                        height: 280px
+
+                    iframe
+                        width: 100%
+                        height: 100%
+                        border: none
+
+                .content-description
+                    margin: 1em 1.1em 1.1em
+
+                    h4 
+                        color: #666
+                        font-size: 1.5em
+                        font-weight: 400
+                        width: 92%
+                        
+                    h5 
+                        color: #888
+                        font-size: 1.2em
+                        font-weight: 400

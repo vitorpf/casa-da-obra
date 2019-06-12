@@ -1,0 +1,33 @@
+.parceiro    
+    width: 100%
+    padding: 2em 0em 0.5em
+    background-color: $color2
+    .container
+        
+        .content_title
+            
+            .title
+                color: $colorW    
+
+            .subtitle
+                color: $colorW                 
+                
+        .content_parceiro
+            +make-row()
+
+            .content_parceiro--parceiro
+                +make-col(4)
+                margin-bottom: 1.5em
+
+                .avatar
+                    
+                    img      
+                        display: block                   
+                        max-width: 80px
+                        margin: 0 auto
+                        @media (min-width: 440px)
+                            max-width: 110px
+                        @media (min-width: 576px)
+                            max-width: 130px
+
+                

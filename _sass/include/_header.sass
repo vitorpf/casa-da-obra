@@ -1,0 +1,89 @@
+header
+    width: 100%               
+    padding: .8em 0
+    position: fixed
+    z-index: 20    
+        
+    .container        
+
+        .content
+            +make-row()
+
+            .navbar
+                +make-col(12)
+                padding: 0em
+                            
+                .logo-mobile
+                    width: 55px
+                    margin-left: 1.3em
+                    @media (min-width: 768px)
+                        display: none
+
+                    img
+                        height: auto
+
+                .navbar-toggler
+                    @media (max-width: 768px)
+                        border: 1px solid #FFF
+                        margin-right: 1.3em
+                        min-height: 40px
+                        +flexbox
+                        +flex-direction(column)
+                        +justify-content(space-around)
+                        +align-items(flex-end)
+                        .menu-icon
+                            display: block
+                            background: #fff
+                            width: 27px
+                            height: 1px
+                            &:nth-child(2)
+                                width: 20px  
+                            
+                #menu
+                    @media (min-width: 768px)
+                        width: 100%
+
+                    ul
+                        padding: 1em 0em    
+                        background-color: rgba(0,0,0,.95)
+                        @media (min-width: 768px)
+                            width: 100%
+                            +flexbox
+                            +justify-content(space-around)
+                            +align-items(center)
+                            background-color: rgba(0,0,0,0)
+                            padding: .5em 0em 
+
+                        li 
+                            @media (min-width: 768px)
+                                &:hover a
+                                    color: #999
+                                &:nth-child(1), &:nth-child(7)
+                                    display: none
+
+                            a 
+                                text-align: center
+                                font-size: 1.1em
+                                color: $colorW 
+                                padding: 1em
+                                text-transform: uppercase
+                                letter-spacing: 2px
+                                @media (min-width: 768px)
+                                    padding: .6em 
+                                    font-size: 1em
+
+                        .logo
+                            display: none
+                            @media (min-width: 768px)
+                                width: 85px
+                                +flexbox
+                                +justify-content(center)
+                                +align-items(center)
+
+                                a 
+                                    padding: 0em
+                                    font-size: 0em
+
+                                    img 
+                                        max-width: 50px
+                                        height: auto
