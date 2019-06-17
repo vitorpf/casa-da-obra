@@ -7033,6 +7033,13 @@ img {
 .localizacao {
   width: 100%;
   padding-top: 95px; }
+  @media (min-width: 768px) {
+    .servico,
+    .galeria,
+    .equipe,
+    .contato,
+    .localizacao {
+      padding-top: 105px; } }
 
 .content_title {
   width: 100%;
@@ -7332,10 +7339,13 @@ header {
     flex: 0 0 50%;
     max-width: 50%;
     cursor: pointer; }
-    .servico .container .content_servico .content_servico--servico:hover .icon .icon-title {
-      color: #ff5100; }
     .servico .container .content_servico .content_servico--servico .icon {
       margin: 0em auto 1.5em; }
+      @media (min-width: 768px) {
+        .servico .container .content_servico .content_servico--servico .icon {
+          width: 250px; }
+          .servico .container .content_servico .content_servico--servico .icon:hover .icon-title {
+            color: #ff5100; } }
       .servico .container .content_servico .content_servico--servico .icon .icon-content {
         padding: 1em 0em; }
         .servico .container .content_servico .content_servico--servico .icon .icon-content img {
@@ -7647,12 +7657,6 @@ header {
     -webkit-justify-content: space-between;
     -moz-justify-content: space-between;
     justify-content: space-between; }
-    @media (min-width: 768px) {
-      .rodape .content-social {
-        width: 20%; } }
-    @media (min-width: 992px) {
-      .rodape .content-social {
-        width: 15%; } }
     .rodape .content-social a {
       color: #ccc;
       font-size: 1.3em; }

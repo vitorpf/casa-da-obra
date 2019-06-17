@@ -9,13 +9,14 @@
 
             .content_servico--servico
                 +make-col(6)
-                cursor: pointer
-                &:hover .icon .icon-title
-                    color: $color1
+                cursor: pointer                
 
                 .icon                    
                     margin: 0em auto 1.5em
-
+                    +media-breakpoint-up(md)
+                        width: 250px
+                        &:hover .icon-title
+                            color: $color1
                     .icon-content
                         padding: 1em 0em
                         
